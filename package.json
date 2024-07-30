@@ -13,7 +13,7 @@
   ],
   "author": "kamel767",
   "bin": {
-    "ritmin": "node ./packages/ritmin-cli/index.js"
+    "ritmin": "packages/ritmin-cli/index.js"
   },
   "scripts": {
     "build": "npx tsc",
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kamel767/Ritmin.git"
+    "url": "git+https://github.com/kamel767/Ritmin.git"
   },
   "dependencies": {
     "@types/node": "^16.18.104",
