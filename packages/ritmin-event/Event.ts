@@ -3,7 +3,7 @@ export interface EventHandlers {
     key: (callback: (key: KeyboardEvent) => void) => void;
 }
 
-export class EventManager implements EventHandlers {
+export default class EventManager implements EventHandlers {
     mouse(callback: (x: number, y: number) => void): void {
         document.addEventListener('mousemove', function(e: MouseEvent) {
             callback(e.clientX, e.clientY);

@@ -1,4 +1,4 @@
-import { ErrorBoundary } from '../ritmin-error/error';
+import {  default as ErrorBoundary } from '../ritmin-error/error';
 interface ElementProps {
   id?: string;
   className?: string;
@@ -10,7 +10,7 @@ interface HtmlElementProps extends ElementProps {
   children?: HtmlElementProps[];
 }
 
-class CreateElement extends ErrorBoundary{
+export default class CreateElement extends ErrorBoundary{
   public static create(props: HtmlElementProps): string {
     const { tag, id, className, style, attributes, children } = props;
     const attrs = [

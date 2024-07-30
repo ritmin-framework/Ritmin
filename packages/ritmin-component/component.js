@@ -1,5 +1,5 @@
-import { ErrorBoundary } from '../ritmin-error/error';
-class CreateElement extends ErrorBoundary {
+import { default as ErrorBoundary } from '../ritmin-error/error';
+export default class CreateElement extends ErrorBoundary {
     static create(props) {
         const { tag, id, className, style, attributes, children } = props;
         const attrs = [
@@ -12,3 +12,4 @@ class CreateElement extends ErrorBoundary {
         return `<${tag} ${attrs}>${innerHtml}</${tag}>`;
     }
 }
+//# sourceMappingURL=component.js.map

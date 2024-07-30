@@ -1,5 +1,5 @@
 // Defines the ErrorBoundary class as provided
-export class ErrorBoundary {
+export default class ErrorBoundary {
   private hasError: boolean;
   private errorMessage: string;
 

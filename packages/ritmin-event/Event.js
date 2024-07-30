@@ -1,4 +1,4 @@
-export class EventManager {
+export default class EventManager {
     mouse(callback) {
         document.addEventListener('mousemove', function (e) {
             callback(e.clientX, e.clientY);
@@ -10,3 +10,4 @@ export class EventManager {
         });
     }
 }
+//# sourceMappingURL=Event.js.map

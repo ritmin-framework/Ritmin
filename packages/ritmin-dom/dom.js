@@ -1,31 +1,14 @@
-// Provides methods to create, modify, or delete HTML elements
 export default class Dom {
-    // Creates and adds HTML elements to the document
-    // @param elementType - The type of element (e.g., 'div', 'p', 'img', etc.)
-    // @param type - Basic details of the element
-    // @param type.id - The id of the element
-    // @param type.className - The class name of the element
-    // @param type.content - The content of the element (optional)
-    // @param type.src - The source of the image (if element is 'img') (optional)
-    // @param elementAll - Additional elements to add to the document (optional)
-    // @param elementAll.type - The type of additional element (e.g., 'div', 'p', 'img', etc.)
-    // @param elementAll.id - The id of the additional element
-    // @param elementAll.className - The class name of the additional element
-    // @param elementAll.content - The content of the additional element (optional)
-    // @param elementAll.src - The source of the image (if additional element is 'img') (optional)
     revise(elementType, type, elementAll) {
         const validElementTypes = ['div', 'p', 'span', 'a', 'button', 'img'];
-        // Validate the element type
         if (!validElementTypes.includes(elementType)) {
             console.error(`Invalid element type: ${elementType}`);
             return;
         }
-        // Validate id and className
         if (typeof type.id !== 'string' || type.id.trim() === '' || typeof type.className !== 'string') {
             console.error(`Invalid id or className: ${type.id}, ${type.className}`);
             return;
         }
-        // Create the basic element
         let element = '';
         if (elementType === 'img') {
             element = `<${elementType} id="${type.id}" class="${type.className}" src="${type.src || ''}" alt="${type.content || ''}">`;
@@ -40,7 +23,6 @@ export default class Dom {
         if (firstChild) {
             fragment.appendChild(firstChild);
         }
-        // Add additional elements
         if (elementAll) {
             if (Array.isArray(elementAll)) {
                 elementAll.forEach(item => {
@@ -84,14 +66,8 @@ export default class Dom {
                 }
             }
         }
-        // Append the element to the document
         document.body.appendChild(fragment);
     }
-    // Updates the style of the specified element by id
-    // @param id - The id of the element to update
-    // @param style - An object containing CSS properties to apply to the element
-    // @param style.key - The name of the CSS property
-    // @param style.value - The value of the CSS property
     itemUpdate(id, style) {
         const element = document.getElementById(id);
         if (element) {
@@ -102,3 +78,4 @@ export default class Dom {
         }
     }
 }
+//# sourceMappingURL=dom.js.map

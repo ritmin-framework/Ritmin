@@ -1,7 +1,7 @@
 {
   "name": "ritmin",
-  "version": "1.0.0",
-  "main": "src/dist/index.js",
+  "version": "1.0.0-beta.2",
+  "main": "./index.js",
   "description": "Ritmin is a fast and lightweight JavaScript/TypeScript framework designed for ease of use and high performance in web development.",
   "type": "module",
   "keywords": [
@@ -12,6 +12,9 @@
     "javascript"
   ],
   "author": "kamel767",
+  "bin": {
+    "ritmin": "node ./packages/ritmin-cli/index.js"
+  },
   "scripts": {
     "build": "npx tsc",
     "docs:en": "npx typedoc --options typedoc.json",
@@ -21,6 +24,7 @@
   "devDependencies": {
     "@eslint/js": "^9.8.0",
     "@types/eslint__js": "^8.42.3",
+    "@types/yargs": "^17.0.32",
     "eslint": "^8.57.0",
     "prettier": "^3.3.3",
     "ts-node": "^10.9.2",
@@ -35,6 +39,7 @@
   "dependencies": {
     "@types/node": "^16.18.104",
     "chalk": "^5.3.0",
-    "peggy": "^4.0.3"
+    "peggy": "^4.0.3",
+    "yargs": "^17.7.2"
   }
 }
