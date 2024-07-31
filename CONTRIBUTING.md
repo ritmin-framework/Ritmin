@@ -22,7 +22,7 @@ To contribute to the Ritmin project, please follow these steps:
    Install the project dependencies using npm:
 
 ``` bash
-npm install ritmin
+npm install 
 ```
 
 3. **Run the Development Environment:**
@@ -58,10 +58,10 @@ npm install ritmin
    Before submitting your pull request, ensure you have the latest changes from the main branch merged into your branch:
 
 ```bash
-   git checkout main
-   git pull origin main
+   git checkout master
+   git pull origin master
    git checkout my-feature-branch
-   git rebase main
+   git rebase master
 ```
 
 2. **Provide a Clear Description:**
