@@ -16,7 +16,7 @@ To install the Ritmin framework, use npm:
 npm install ritmin
 ```
 ## Documentation
-For more information on how to use the Ritmin framework and its libraries, please refer to the official documentation.
+For more information on how to use the Ritmin framework and its libraries, please refer to the [official documentation](https://ritmin.gitbook.io/ritmin-docs/).
 
 ## Contribution
 If you are interested in contributing to the development of the Ritmin framework or improving its components, please check the [contribution guidelines](CONTRIBUTING.md) and open pull requests on GitHub.
