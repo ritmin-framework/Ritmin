@@ -17,7 +17,7 @@ export default class AudioController {
     // Create the audio element and connect it to the audio context
     this.audioElement = new Audio(audioSrc);
     this.sourceNode = this.audioContext.createMediaElementSource(
-      this.audioElement
+      this.audioElement,
     );
 
     // Create the gain node and connect it
@@ -34,7 +34,7 @@ export default class AudioController {
   public play(): void {
     this.audioContext.resume().then(() => {
       this.audioElement.play().catch((error) => {
-        console.error("Error playing audio:", error);
+        console.error('Error playing audio:', error);
       });
     });
   }

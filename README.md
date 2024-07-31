@@ -21,7 +21,7 @@ For more information on how to use the Ritmin framework and its libraries, pleas
 If you are interested in contributing to the development of the Ritmin framework or improving its libraries, please check the contribution guidelines and open pull requests on GitHub.
 
 ## License
-The Ritmin framework is licensed under the MIT License.
+The Ritmin framework is licensed under the [MIT](LICENSE.txt) License.
 ## Support
 For any inquiries or support, you can contact us via email or open a ticket on GitHub.
 

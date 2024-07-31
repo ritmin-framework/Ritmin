@@ -1,4 +1,4 @@
-import {  default as ErrorBoundary } from '../ritmin-error/error';
+import { default as ErrorBoundary } from '../ritmin-error/error';
 interface ElementProps {
   id?: string;
   className?: string;
@@ -10,18 +10,23 @@ interface HtmlElementProps extends ElementProps {
   children?: HtmlElementProps[];
 }
 
-export default class CreateElement extends ErrorBoundary{
+export default class CreateElement extends ErrorBoundary {
   public static create(props: HtmlElementProps): string {
     const { tag, id, className, style, attributes, children } = props;
     const attrs = [
       id ? `id="${id}"` : '',
       className ? `class="${className}"` : '',
       style ? `style="${style}"` : '',
-      ...Object.entries(attributes || {}).map(([key, value]) => `${key}="${value}"`)
-    ].filter(Boolean).join(' ');
+      ...Object.entries(attributes || {}).map(
+        ([key, value]) => `${key}="${value}"`,
+      ),
+    ]
+      .filter(Boolean)
+      .join(' ');
 
-    const innerHtml = children ? children.map(CreateElement.create).join('') : '';
+    const innerHtml = children
+      ? children.map(CreateElement.create).join('')
+      : '';
     return `<${tag} ${attrs}>${innerHtml}</${tag}>`;
   }
 }
-
