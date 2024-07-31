@@ -4,6 +4,7 @@
   "main": "./index.js",
   "description": "Ritmin is a fast and lightweight JavaScript/TypeScript framework designed for ease of use and high performance in web development.",
   "type": "module",
+  "license": "MIT",
   "keywords": [
     "ritmin",
     "framework",
