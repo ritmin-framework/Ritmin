@@ -1,6 +1,6 @@
 {
   "name": "ritmin",
-  "version": "1.0.0",
+"version": "1.0.0-beta.3",
   "main": "./index.js",
   "description": "Ritmin is a fast and lightweight JavaScript/TypeScript framework designed for ease of use and high performance in web development.",
   "type": "module",
@@ -21,6 +21,7 @@
     "lint": "eslint --config .eslintrc.cjs ./**/*.{js,ts,tsx}",
     "lint-staged": "npm run format && npm run lint",
     "format": "prettier --write \"./**/*.{js,ts,tsx}\""
+
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
