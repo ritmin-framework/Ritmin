@@ -21,13 +21,6 @@
   ```bash
    npm install
    ```
-  تشغيل بيئة التطوير:
-
-تأكد من أن كل شيء يعمل بشكل صحيح بتشغيل:
-
-  ```bash
-   npm start
-   ```
    2. إجراء التعديلات
 إنشاء فرع جديد:
 
@@ -48,10 +41,10 @@
 
 قبل تقديم طلب السحب، تأكد من دمج أحدث التعديلات من الفرع الرئيسي إلى فرعك:
  ```bash
-    git checkout main
-    git pull origin main
+    git checkout master
+    git pull origin master
     git checkout my-feature-branch
-    git rebase main
+    git rebase master
 
  ```
 ##  إضافة وصف واضح:
