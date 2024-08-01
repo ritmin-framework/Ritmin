@@ -30,7 +30,7 @@ npm install ritmin
 
 GitBook: لتوفير أدوات توثيق ممتازة تساعدنا في تقديم وثائق عالية الجودة لـ Ritmin.
 
-![GitBook](./supportive/GitBook%20-%20Dark.png)
+![GitBook](./supportive/GitBook.png)
 
 ## الترخيص
 
