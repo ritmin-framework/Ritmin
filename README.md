@@ -2,7 +2,7 @@
 Ritmin is a comprehensive framework designed to simplify web application development by offering a robust set of reusable tools and components. Ritmin stands out for its flexibility and ease of use, making it an ideal choice for developers seeking effective and innovative solutions for building their applications.
 
  Note: Ritmin is a beta framework and is still under development. Features and components may be subject to continuous changes and improvements. 
- 
+
  Note: There's a [document](README-ar.md) in Arabic if you'd like to take a look at it. 
 ## Overview
 Ritmin provides a variety of tools and components that streamline the management and configuration of different elements in your web applications. The framework is designed to be flexible and customizable, allowing developers to adapt it to meet the specific needs of their projects.
