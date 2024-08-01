@@ -1,3 +1,4 @@
+
 // Defines the ErrorBoundary class as provided
 export default class ErrorBoundary {
   private hasError: boolean;

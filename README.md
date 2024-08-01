@@ -23,6 +23,14 @@ For more information on how to use the Ritmin framework and its libraries, pleas
 If you are interested in contributing to the development of the Ritmin framework or improving its components, please check the [contribution guidelines](CONTRIBUTING.md) and open pull requests on GitHub.
 
 Note: There's a [contribution document](CONTRIBUTING-ar.md) in Arabic if you'd like to take a look at it.
+
+## Acknowledgements
+We would like to thank the following organizations and individuals for their support:
+
+GitBook: Providing excellent documentation tools that help us deliver high-quality documentation for Ritmin.
+
+![GitBook](./supportive/GitBook%20-%20Dark.png)
+
 ## License
 The Ritmin framework is licensed under the [MIT](LICENSE.txt) License.
 ## Support
