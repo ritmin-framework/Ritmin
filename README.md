@@ -29,7 +29,7 @@ We would like to thank the following organizations and individuals for their sup
 
 GitBook: Providing excellent documentation tools that help us deliver high-quality documentation for Ritmin.
 
-![GitBook](./supportive/GitBook.png)
+![https://app.gitbook.com/](./supportive/GitBook.png)
 
 ## License
 The Ritmin framework is licensed under the [MIT](LICENSE.txt) License.
