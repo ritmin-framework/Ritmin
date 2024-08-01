@@ -25,14 +25,6 @@ To contribute to the Ritmin project, please follow these steps:
 npm install 
 ```
 
-3. **Run the Development Environment:**
-
-   Ensure everything is working correctly by starting the development server:
-
-```bash
-   npm start
-```
-
 ### 2. Make Changes
 
 1. **Create a New Branch:**
