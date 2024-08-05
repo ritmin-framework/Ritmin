@@ -1,5 +1,7 @@
 webpack.config.js
 node_modules/
 docs/
+dist/
 settings.json
+compiler/
 *.js.map

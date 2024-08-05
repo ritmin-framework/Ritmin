@@ -14,10 +14,12 @@
   ],
   "author": "kamel767",
   "bin": {
-    "ritmin": "packages/ritmin-cli/index.js"
+    "ritmin": "dist/packages/ritmin-cli/index.js"
   },
   "scripts": {
-    "build": "npx tsc",
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "build-webpack": "webpack",
     "lint": "eslint --config .eslintrc.cjs ./**/*.{js,ts,tsx}",
     "lint-staged": "npm run format && npm run lint",
     "format": "prettier --write \"./**/*.{js,ts,tsx}\""
@@ -32,10 +34,15 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "glob": "^11.0.0",
+    "glob-all": "^3.3.1",
     "prettier": "^3.3.3",
+    "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^7.18.0"
+    "typescript-eslint": "^7.18.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
   },
   "repository": {
     "type": "git",
@@ -43,7 +50,10 @@
   },
   "dependencies": {
     "chalk": "^5.3.0",
+    "express": "^4.19.2",
     "peggy": "^4.0.3",
+    "pegjs": "^0.10.0",
+    "pino": "^9.3.2",
     "yargs": "^17.7.2",
     "zustand": "^4.5.4"
   }
