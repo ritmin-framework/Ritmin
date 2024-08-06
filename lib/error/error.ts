@@ -1,12 +1,3 @@
-import { default as store } from '../store/api';
-import pino from 'pino';
-
-// إعداد سجل الأخطاء
-const logger = pino({ level: 'error' });
-const dataErr: string[] = [];
-
-const err = store();
-
 export default class ErrorBoundary {
   private hasError: boolean;
   private errorMessage: string;
@@ -16,10 +7,10 @@ export default class ErrorBoundary {
     this.errorMessage = 'Something went wrong.';
   }
 
-  // يسجل الخطأ باستخدام pino
+  // يسجل الخطأ بدون store
   public logError(error: Error) {
-    logger.error(error.message);
-    err.add();
+    console.error(error.message); // استخدم console.error لتسجيل الأخطاء
+    // لا حاجة لتحديث الحالة هنا بدون store
   }
 
   // يلتقط الأخطاء ويقوم بتحديث الحالة
@@ -30,9 +21,7 @@ export default class ErrorBoundary {
 
     // تسجيل الخطأ
     this.logError(error);
-    err.updates((state) => {
-      dataErr.push(`State Updated: ${JSON.stringify(state)}`);
-    });
+    // أزلت تحديث الحالة هنا
   }
 
   // يعرض المحتوى أو رسالة الخطأ
@@ -47,4 +36,3 @@ export default class ErrorBoundary {
     return children;
   }
 }
-export { dataErr };

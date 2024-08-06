@@ -1,4 +1,4 @@
-import { default as ErrorBoundary } from '../ritmin-error/error';
+import { default as ErrorBoundary } from '../error/error';
 interface ElementProps {
   id?: string;
   className?: string;
