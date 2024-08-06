@@ -12,8 +12,7 @@ export default class AudioController {
   // @param audioSrc - The audio source, which is the URL of the audio file to be played.
   constructor(audioSrc: string) {
     // Create the audio context
-    this.audioContext = new (window.AudioContext ||
-      (window as any).webkitAudioContext)();
+    this.audioContext = new (window.AudioContext);
     // Create the audio element and connect it to the audio context
     this.audioElement = new Audio(audioSrc);
     this.sourceNode = this.audioContext.createMediaElementSource(

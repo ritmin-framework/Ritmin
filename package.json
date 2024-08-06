@@ -1,7 +1,8 @@
 {
   "name": "ritmin",
   "version": "1.0.0-beta.3",
-  "main": "./index.js",
+  "main": "ts-node ./lib/index.ts",
+  "types": "./lib/index.d.ts",
   "description": "Ritmin is a fast and lightweight JavaScript/TypeScript framework designed for ease of use and high performance in web development.",
   "type": "module",
   "license": "MIT",
@@ -12,20 +13,26 @@
     "typescript",
     "javascript"
   ],
+  "files": [
+    "dist/**/*"
+  ],
   "author": "kamel767",
   "bin": {
-    "ritmin": "dist/packages/ritmin-cli/index.js"
+    "ritmin": "ts-node ./lib/cli/index.ts"
   },
   "scripts": {
-    "build": "tsc",
     "clean": "rm -rf dist",
-    "build-webpack": "webpack",
-    "lint": "eslint --config .eslintrc.cjs ./**/*.{js,ts,tsx}",
+    "lint": "eslint --config .eslintrc.cjs lib/**/*.ts",
     "lint-staged": "npm run format && npm run lint",
-    "format": "prettier --write \"./**/*.{js,ts,tsx}\""
+    "format": "prettier --write \"./lib/**/*.{ts}\"", 
+    "build": "npx tsc; npx rollup -c"
+    
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.0.0",
     "@types/yargs": "^17.0.32",
@@ -37,6 +44,7 @@
     "glob": "^11.0.0",
     "glob-all": "^3.3.1",
     "prettier": "^3.3.3",
+    "rollup": "^4.20.0",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4",
@@ -49,6 +57,7 @@
     "url": "git+https://github.com/kamel767/Ritmin.git"
   },
   "dependencies": {
+    "@types/express": "^4.17.21",
     "chalk": "^5.3.0",
     "express": "^4.19.2",
     "peggy": "^4.0.3",
