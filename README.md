@@ -1,4 +1,4 @@
-I would like to inform you that I have decided to discontinue the [Framework Name] project and will not be continuing its development. This journey has been filled with challenges and achievements, but I have come to realize that the time and resources available to me do not allow me to continue working on this project.
+I would like to inform you that I have decided to discontinue the Ritmin Framework project and will not be continuing its development. This journey has been filled with challenges and achievements, but I have come to realize that the time and resources available to me do not allow me to continue working on this project.
 
 ![Ritmin logo](./Ritmin.png)
 ## Ritmin Framework
