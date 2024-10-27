@@ -1,5 +1,3 @@
-I would like to inform you that I have decided to discontinue the Ritmin Framework project and will not be continuing its development. This journey has been filled with challenges and achievements, but I have come to realize that the time and resources available to me do not allow me to continue working on this project.
-
 ![Ritmin logo](./Ritmin.png)
 ## Ritmin Framework
 Ritmin is a comprehensive framework designed to simplify web application development by offering a robust set of reusable tools and components. Ritmin stands out for its flexibility and ease of use, making it an ideal choice for developers seeking effective and innovative solutions for building their applications.
